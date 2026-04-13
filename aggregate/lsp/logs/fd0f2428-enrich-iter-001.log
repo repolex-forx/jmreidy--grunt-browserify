@@ -1,0 +1,22 @@
+[2026-04-13T16:17:54Z] === ENRICH ITERATION 1 START | repo=jmreidy/grunt-browserify sha=fd0f2428 ===
+[2026-04-13T16:17:54Z] [iter=1] PHASE START: enrich repo=jmreidy/grunt-browserify sha=fd0f2428 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fd0f2428-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fd0f242873afc3d8bd4ed80df8bd462f52b72dea.nq.gz
+[2026-04-13T16:18:00Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-13T16:18:21Z] [iter=1] AST store loaded triples=2545829 load_secs=21 mem_mb=942 MB
+[2026-04-13T16:18:21Z] [iter=1] Step 2: Finding LSP targets mem_mb=942 MB
+[2026-04-13T16:18:22Z] [iter=1] LSP targets found call_sites=16792 imports=0 extends=0 implements=0 secs=1
+[2026-04-13T16:18:22Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=942 MB
+[2026-04-13T16:18:38Z] [iter=1] Position index built positions=177488 nodes_with_types=202133 secs=16 mem_mb=942 MB
+[2026-04-13T16:18:38Z] [iter=1] Step 3: Starting LSP resolution mem_mb=942 MB already_completed_types=[] already_completed_files=0
+[2026-04-13T16:18:38Z] [iter=1] Resolving target type target_type=call_site count=16792
+[2026-04-13T16:18:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=examples/watch/public/main.js
+[2026-04-13T17:17:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.4 files_done=1 resolved=98 errors=3288 current=examples/watch/public/vendor.js
+[2026-04-13T17:50:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.3 files_done=2 resolved=164 errors=5124 current=examples/watch/public/app.js
+[2026-04-13T18:16:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.3 files_done=3 resolved=196 errors=6576 current=test/browserify.test.js
+[2026-04-13T18:20:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.2 files_done=4 resolved=198 errors=6793 current=examples/basic/public/main.js
+[2026-04-13T18:53:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.6 files_done=5 resolved=272 errors=8678 current=test/fixtures/shim/jquery.js
+[2026-04-13T19:20:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=182.7 files_done=6 resolved=308 errors=10202 current=test/fixtures/noParse/jquery.js
+[2026-04-13T19:48:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=210.1 files_done=7 resolved=344 errors=11726 current=examples/basic/public/vendor.js
+[2026-04-13T20:17:55Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=7 new_files_this_iter=7 mem_mb=942 MB
+[2026-04-13T20:17:55Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/fd0f242873afc3d8bd4ed80df8bd462f52b72dea.nq.gz triples=66166
+[2026-04-13T20:17:56Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-13T20:17:56Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=7
