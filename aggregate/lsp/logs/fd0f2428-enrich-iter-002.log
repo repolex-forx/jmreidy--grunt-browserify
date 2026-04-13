@@ -1,0 +1,21 @@
+[2026-04-13T20:23:33Z] === ENRICH ITERATION 2 START | repo=jmreidy/grunt-browserify sha=fd0f2428 ===
+[2026-04-13T20:23:33Z] [iter=2] PHASE START: enrich repo=jmreidy/grunt-browserify sha=fd0f2428 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fd0f2428-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fd0f242873afc3d8bd4ed80df8bd462f52b72dea.nq.gz
+[2026-04-13T20:23:39Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-13T20:24:01Z] [iter=2] AST store loaded triples=2545829 load_secs=20 mem_mb=939 MB
+[2026-04-13T20:24:01Z] [iter=2] Step 2: Finding LSP targets mem_mb=939 MB
+[2026-04-13T20:24:02Z] [iter=2] LSP targets found call_sites=16792 imports=0 extends=0 implements=0 secs=1
+[2026-04-13T20:24:04Z] [iter=2] Loaded checkpoint partial graph triples=66166
+[2026-04-13T20:24:04Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=939 MB
+[2026-04-13T20:24:19Z] [iter=2] Position index built positions=177488 nodes_with_types=202133 secs=15 mem_mb=939 MB
+[2026-04-13T20:24:19Z] [iter=2] Step 3: Starting LSP resolution mem_mb=939 MB already_completed_types=[] already_completed_files=7
+[2026-04-13T20:24:19Z] [iter=2] Resolving target type target_type=call_site count=16792
+[2026-04-13T20:24:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=examples/basic/public/vendor.js
+[2026-04-13T20:54:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=1 resolved=4 errors=1847 current=examples/basic/public/app.js
+[2026-04-13T20:55:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=31.8 files_done=2 resolved=14 errors=1885 current=lib/runner.js
+[2026-04-13T20:56:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=32.7 files_done=3 resolved=16 errors=1941 current=examples/basic/Gruntfile.js
+[2026-04-13T20:56:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=33.3 files_done=17 resolved=20 errors=1974 current=examples/basic/client/basic.js
+[2026-04-13T20:57:19Z] [iter=2] Target type resolved target_type=call_site resolved=25 errors=2004 secs=1980 mem_mb=939 MB
+[2026-04-13T20:57:26Z] [iter=2] Step 5: Writing final enrichment file triples=142829
+[2026-04-13T20:57:29Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fd0f242873afc3d8bd4ed80df8bd462f52b72dea.nq.gz size_kb=2412
+[2026-04-13T20:57:29Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-13T20:57:29Z] [iter=2] PHASE END: enrich elapsed_s=2036 elapsed_min=33.9 total_triples=142829
